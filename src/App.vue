@@ -1,12 +1,18 @@
 <template>
   <div id="app">
-    <nav class="flex">
-      <div class="fl w-50-l"><h4>Grzegorz Hadala, Product Designer</h4></div>
-      <div class="fl w-50-l tr">
-        <h4>
-          <span class="separator">---</span>
-          <button type="button" name="button">Hire me!</button>
-        </h4>
+    <nav class="nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            Grzegorz Hadala, Product Designer &nbsp; &mdash;&mdash;&mdash; &nbsp;
+            <a href="#/" class="btn btn-sm btn-primary">Hire me</a>
+          </div>
+          <div class="col-lg-4 text-right">
+            <a href="#">Medium</a> &mdash;
+            <a href="#">LinkedIn</a> &mdash;
+            <a href="#">Behance</a>
+          </div>
+        </div>
       </div>
     </nav>
     <router-view></router-view>
@@ -19,35 +25,126 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 * {
-  outline: 1px solid red;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-#app {
-  padding: 6em;
+body {
+  padding-bottom: 100px;
 }
-@media (max-width: 400px) {
-  #app {
-    padding: 5em 10vw;
+
+a {
+  color: #43B5FA;
+  transition: all 0.25s ease;
+  &:hover {
+    color: darken(#43B5FA, 20%);
+    text-decoration: none;
   }
 }
+#app {
+  // font-family: 'Roboto', sans-serif;
+  font-family: 'Muli', sans-serif;
+  // font-family: 'Noto Serif', serif;
+
+  // font-family: 'Montserrat', sans-serif;
+
+  // font-family: 'Cormorant Garamond', serif;
+  overflow: hidden;
+
+}
 p {
-  font-family: serif;
-  font-size: 1.2em;
+  font-size: 1.125em;
+  line-height: 1.125em * 1.3;
 }
-article {
-  padding: 3em 0;
-  position: relative;
-  z-index: 100;
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: #292b2c;
 }
-h1, h2, h3, h4 {
-  font-family: 'Poppins', sans-serif;
+h4 {
+  font-weight: bold;
 }
-nav {
-  background: #fff;
+.nav {
+  padding: 16px 0;
+  // font-weight: bold;
   position: fixed;
-  top: 0;
-  left: 6em;
-  right: 6em;
+  bottom: 0;
+  z-index: 900;
+  background: black;
+  color: white;
+  width: 100%;
+  p {
+    margin:0;
+  }
+}
+.nav .separator {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  margin: 0 32px;
+  border-bottom: 1px solid white;
+  top: -3px;
+}
+.highlight {
+  background-color: #FAE543;
+  width: 1000%;
+  margin-left: -100%;
+  padding: 0 100%;
+  display: inline-block;
+}
+
+.underline {
+  display: inline-block;
+  border-bottom: 1px solid #FAE543;
+  position: relative;
+  &:hover {
+    cursor: pointer;
+    &:after {
+      opacity: 1;
+      display: block;
+    }
+  }
+  &:after {
+    transition: All 0.25s ease;
+    content: attr(data-title);
+    display: none;
+    opacity: 0;
+    position: absolute;
+    background: #FAE543;
+    color: black;
+    padding: 1em;
+    font-family: 'Muli', sans-serif;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}
+
+.vue-typer .custom.char.typed {
+  color: #292b2c;
+}
+
+
+
+.apparate {
+	opacity: 0;
+}
+
+@keyframes fadeInUp {
+	from {
+		transform: translateY(100px);
+		opacity: 0;
+	}
+
+	to {
+		transform: none;
+		opacity: 1;
+	}
+}
+
+.fade-in-up {
+	animation-name: fadeInUp;
+	animation-duration: .7s;
+	animation-fill-mode: forwards;
 }
 </style>

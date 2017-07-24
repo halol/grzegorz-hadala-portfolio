@@ -1,0 +1,152 @@
+.main-header {
+  padding: 15em 0 5em 0;
+}
+.welcome {
+  line-height: 1.25;
+}
+
+
+h2 {
+  margin-bottom: 1em;
+}
+.circles {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: -50px;
+}
+// .change-hi {
+//   color: #292b2c!important;
+// }
+.circle {
+  $size: 250px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: $size;
+  height: $size;
+  border-radius: 999px;
+  align-items: center;
+  position: absolute;
+  color: black;
+  border-width: 2px;
+  border-style:dashed;
+  // background-color: rgba(0,0,0,.2);
+  transform-origin: center;
+  font-weight: 400;
+  font-size: 1.25em;
+  $primary: rgba(black, 0.5);
+  $secondary: rgba(black, 0.5);
+  $teritary: rgba(black, 0.5);
+  &.circle--1 {
+    border-color: $primary;
+    transform: translate($size/3);
+    transition: all 0.25s ease;
+    z-index: 100;
+    &:hover {
+      transform: scale(1.1) translate($size/3.2);
+      cursor: pointer;
+      border-color: black;
+      z-index: 100;
+    }
+  }
+  &.circle--2 {
+    // left: $size/1.5;
+    border-color: $secondary;
+    transform: translate(-$size/3);
+    transition: all 0.25s ease;
+    z-index: 100;
+
+    &:hover {
+      transform: scale(1.1) translate(-$size/3.2);
+      cursor: pointer;
+      border-color: black;
+      z-index: 100;
+    }
+  }
+  &.circle--3 {
+    border-color: $teritary;
+    transform: translateY($size/1.75);
+    transition: all 0.25s ease;
+    z-index: 100;
+    &:hover {
+      transform: scale(1.1) translateY($size/1.90);
+      cursor: pointer;
+      border-color: black;
+      z-index: 100;
+    }
+  }
+  &.me {
+    transform: translateY($size/5);
+    font-weight: 900;
+    border-color: transparent;
+    color: black;
+    z-index: 0;
+  }
+}
+.process {
+  padding-bottom: 5em;
+}
+.description {
+  padding: 6em 0;
+}
+.card.card-project {
+  margin-bottom: 30px;
+  border-color: transparent;
+  border-radius: 0;
+  & * {
+    border-radius: 0;
+  }
+  .card-img-top {
+    min-height: 200px;
+    background-color: #f5f5f5;
+    height: auto;
+    width: 100%;
+  }
+  .card-block {
+    padding: 1.75em 0;
+    .card-text {
+
+    }
+  }
+  //transition: all 0.25s cubic-bezier(.43,.02,.48,.99);
+  &:hover {
+    //box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+  }
+}
+
+
+
+
+.card-inverse {
+  .card-text {
+    color: rgba(white, 1);
+  }
+  $degrees: 0deg 45deg 90deg 135deg 180deg;
+  // &:first-child {
+  //   background-color: #43B5FA;
+  //   border-color: #43B5FA;
+  // }
+  // &:nth-child(2) {
+  //   background-color: adjust-hue(#43B5FA, 45deg);
+  //   border-color: adjust-hue(#43B5FA, 45deg);
+  // }
+  // &:nth-child(3) {
+  //   background-color: adjust-hue(#43B5FA, 90deg);
+  //   border-color: adjust-hue(#43B5FA, 45deg);
+  // }
+  // &:nth-child(4) {
+  //   background-color: adjust-hue(#43B5FA, 135deg);
+  //   border-color: adjust-hue(#43B5FA, 45deg);
+  // }
+  // &:nth-child(5) {
+  //   background-color: adjust-hue(#43B5FA, 180deg);
+  //   border-color: adjust-hue(#43B5FA, 45deg);
+  // }
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i}) {
+      background-color: adjust-hue(#43B5FA, 65 * $i / 2);
+      border-color: adjust-hue(#43B5FA, 65 * $i / 2);
+    }
+  }
+}

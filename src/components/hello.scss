@@ -105,13 +105,6 @@ h2 {
   }
   .card-block {
     padding: 1.75em 0;
-    .card-text {
-
-    }
-  }
-  //transition: all 0.25s cubic-bezier(.43,.02,.48,.99);
-  &:hover {
-    //box-shadow: 0 4px 24px rgba(0,0,0,0.2);
   }
 }
 
@@ -123,26 +116,6 @@ h2 {
     color: rgba(white, 1);
   }
   $degrees: 0deg 45deg 90deg 135deg 180deg;
-  // &:first-child {
-  //   background-color: #43B5FA;
-  //   border-color: #43B5FA;
-  // }
-  // &:nth-child(2) {
-  //   background-color: adjust-hue(#43B5FA, 45deg);
-  //   border-color: adjust-hue(#43B5FA, 45deg);
-  // }
-  // &:nth-child(3) {
-  //   background-color: adjust-hue(#43B5FA, 90deg);
-  //   border-color: adjust-hue(#43B5FA, 45deg);
-  // }
-  // &:nth-child(4) {
-  //   background-color: adjust-hue(#43B5FA, 135deg);
-  //   border-color: adjust-hue(#43B5FA, 45deg);
-  // }
-  // &:nth-child(5) {
-  //   background-color: adjust-hue(#43B5FA, 180deg);
-  //   border-color: adjust-hue(#43B5FA, 45deg);
-  // }
   @for $i from 1 through 6 {
     &:nth-child(#{$i}) {
       background-color: adjust-hue(#43B5FA, 65 * $i / 2);

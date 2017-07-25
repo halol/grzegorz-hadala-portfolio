@@ -1,19 +1,6 @@
 <template>
   <div class="hello">
-    <!-- <aside class="menu">
-      <ul>
-        <li><a href="#/">Siema!</a>
-          <ul>
-            <li><a href="#">What I do</a></li>
-            <li><a href="#">Featured Projects</a></li>
-            <li><a href="#">Other Projects</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Hire me!</a></li>
-          </ul>
-        </li>
-      </ul>
-    </aside> -->
-    <header class="main-header">
+    <header class ="main-header">
       <div class="container">
         <div class="row">
           <div class="col-lg-7">
@@ -140,11 +127,11 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="card card-project">
-              <img class="card-img-top" src="../assets/myway.png" alt="Project name">
+              <router-link to="MyWay"><img class="card-img-top" src="../assets/myway.png" alt="MyWay"></router-link>
               <div class="card-block">
-                <h4>MyWay</h4>
+                <h4><router-link to="MyWay">MyWay</router-link></h4>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#/">Read on Medium &rarr;</a>
+                <a href="#/">Read case study &rarr;</a>
               </div>
             </div>
           </div>
@@ -152,9 +139,9 @@
             <div class="card card-project">
               <img class="card-img-top" src="../assets/cambridge_half.png" alt="Project name">
               <div class="card-block">
-                  <h4>Cambridge Satchel Company</h4>
+                <h4>Cambridge Satchel Company</h4>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#/">Read on Medium &rarr;</a>
+                <a href="#/">Read on Behance &rarr;</a>
               </div>
             </div>
           </div>

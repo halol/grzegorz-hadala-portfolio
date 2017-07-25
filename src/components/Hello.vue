@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <main-nav></main-nav>
     <header class ="main-header">
       <div class="container">
         <div class="row">

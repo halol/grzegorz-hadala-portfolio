@@ -3,6 +3,7 @@ import Router from 'vue-router'
 // Components
 import Hello from '@/components/Hello'
 import NotFound from '@/components/NotFound'
+import HireMe from '@/components/HireMe'
 // Projects
 import MyWay from '@/projects/MyWay'
 
@@ -18,8 +19,14 @@ export default new Router({
     },
     {
       path: '/myway',
-      name: 'MyWay',
+      name: 'myway',
       component: MyWay
+    },
+    {
+      path: '/hireme',
+      name: 'hireme',
+      component: HireMe
+
     },
     {
       path: '*',

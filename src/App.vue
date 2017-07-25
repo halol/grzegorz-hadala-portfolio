@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <nav class="nav">
+    <nav class="nav" v-if="$route.name != 'hireme'">
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
             Grzegorz Hadala, Product Designer &nbsp; &mdash;&mdash;&mdash; &nbsp;
-            <a href="#/" class="btn btn-sm btn-primary">Hire me</a>
+            <a href="/hireme" class="btn btn-sm btn-primary">Hire me</a>
           </div>
           <div class="col-lg-4 text-right">
             <a href="#">Medium</a> &mdash;
@@ -15,13 +15,26 @@
         </div>
       </div>
     </nav>
-    <router-view></router-view>
+    <transition name="fade" mode="out-in" v-on:after-enter="afterEnter" appear>
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+  data () {
+    return {
+      transitionName: 'slide-left'
+    }
+  },
+  beforeRouteUpdate (to, from, next) {
+    const toDepth = to.path.split('/').length
+    const fromDepth = from.path.split('/').length
+    this.transitionName = toDepth < fromDepth ? 'slide-right' : 'slide-left'
+    next()
+  }
 }
 </script>
 
@@ -146,5 +159,24 @@ h4 {
 	animation-name: fadeInUp;
 	animation-duration: .7s;
 	animation-fill-mode: forwards;
+}
+
+
+.slide-left-enter, .slide-right-leave-active {
+  opacity: 0;
+  -webkit-transform: translate(30px, 0);
+  transform: translate(30px, 0);
+}
+.slide-left-leave-active, .slide-right-enter {
+  opacity: 0;
+  -webkit-transform: translate(-30px, 0);
+  transform: translate(-30px, 0);
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0
 }
 </style>

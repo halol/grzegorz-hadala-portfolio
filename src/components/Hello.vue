@@ -1,6 +1,5 @@
 <template>
   <div class="hello">
-    <main-nav></main-nav>
     <header class ="main-header">
       <div class="container">
         <div class="row">
@@ -128,7 +127,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="card card-project">
-              <router-link to="MyWay"><img class="card-img-top" src="../assets/myway.png" alt="MyWay"></router-link>
+              <router-link to="MyWay"><img class="card-img-top" src="../assets/myway/myway.png" alt="MyWay"></router-link>
               <div class="card-block">
                 <h4><router-link to="MyWay">MyWay</router-link></h4>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -158,7 +157,24 @@
           </div>
         </div>
       </div>
-
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card card-project" v-for="project in projects" :key="project.id">
+              <img class="card-img-top" :src="project.cover" :alt="project.name">
+              <div class="card-block">
+                <h4>{{project.name}}</h4>
+                <p class="card-text">{{project.description}}</p>
+                <a v-if="project.medium" :href="project.medium">Read on Medium &rarr;</a>
+                <a v-if="project.link" :href="project.link">Read case study &rarr;</a>
+                <a v-if="project.behance" :href="project.behance">Show on Behance &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </template>
@@ -173,6 +189,28 @@ export default {
   name: 'hello',
   data () {
     return {
+      projects: [
+        {
+          name: 'MyWay',
+          description: 'Lorem ipsum short description',
+          cover: '/static/myway/myway.png',
+          link: '',
+          medium: 'https://medium.freecodecamp.org/grabs-front-end-guide-for-large-teams-484d4033cc41',
+          behance: ''
+        },
+        {
+          name: 'Cambridge Satchel',
+          description: 'Lorem ipsum short description',
+          cover: '/static/cambridge_half.png',
+          link: 'cambridge'
+        },
+        {
+          name: 'Disc Museum',
+          description: 'Lorem ipsum short description',
+          cover: '/static/cambridge_half.png',
+          behance: 'https://www.behance.net/gallery/54979335/Montreal-Espace-Pour-La-Vie-cards'
+        }
+      ]
     }
   }
 }

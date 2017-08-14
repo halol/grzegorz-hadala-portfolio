@@ -110,11 +110,34 @@ h2 {
 }
 
 
+.measure {
+  max-width: 70%;
+}
 
-
+.make-some-room {
+  padding: 64px 0;
+}
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    width: calc(100%/4);
+    img {
+      max-width: 100%;
+      height: auto;  
+    }
+  }
+}
 .card-inverse {
-  .card-text {
+  .card-text,
+  .card-title {
     color: rgba(white, 1);
+  }
+  .list-group {
+    .list-group-item {
+      background: transparent;
+      color: rgba(white, 1);
+    }
   }
   $degrees: 0deg 45deg 90deg 135deg 180deg;
   @for $i from 1 through 6 {

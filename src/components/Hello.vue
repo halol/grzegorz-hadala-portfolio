@@ -24,40 +24,41 @@
           <div class="col-lg-12">
             <h2>What I do</h2>
           </div>
-          <div class="col-lg-4">
-            <h4>UX/Design</h4>
+        </div>
+        <div class="row make-some-room">
+          <div class="col-lg-5">
+            <h4>UX & UI</h4>
             <p class="">Empathy to the users came to very natural. I’m a problem solver and my biggest goal is to make users happy. With more than 10 years of experience in digital design and artistic soul I’ve developed an eye to create beautiful interfaces and smooth and engaging user flows.</p>
-            <ul class="list-group">
-              <li class="list-group-item">UX Research</li>
-              <li class="list-group-item">Workshops</li>
-              <li class="list-group-item">Wireframing</li>
-              <li class="list-group-item">Prototyping</li>
-              <li class="list-group-item">Testing</li>
-              <li class="list-group-item">UI Design</li>
-              <li class="list-group-item">Design hands off</li>
+          </div>
+          <div class="col-lg-7">
+            <ul class="photos list-unstyled list-inline">
+              <li><img src="/static/atwork/atwork_1_300w.jpg" alt=""></li>
+              <li><img src="/static/atwork/atwork_2_300w.jpg" alt=""></li>
+              <li><img src="/static/atwork/atwork_3_300w.jpg" alt=""></li>
+              <li><img src="/static/atwork/atwork_4_300w.jpg" alt=""></li>
+              <li><img src="/static/atwork/atwork_5_300w.jpg" alt=""></li>
+              <li><img src="/static/atwork/atwork_6_300w.jpg" alt=""></li>
+              <li><img src="/static/atwork/atwork_7_300w.jpg" alt=""></li>
+              <li><img src="/static/atwork/atwork_8_300w.jpg" alt=""></li>
             </ul>
           </div>
-          <div class="col-lg-4">
+        </div>
+        <div class="row make-some-room">
+          <div class="col-lg-5">
             <h4>Tech</h4>
-            <p class="">Front-end development and being up to date with new technologies (and tools) are my hobby. I’m also using it to improve and optimize my design and business workflow.</p>
-            <ul class="list-group">
-              <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Morbi leo risus</li>
-              <li class="list-group-item">Porta ac consectetur ac</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
+            <p class="">Front-end development and being up to date with new technologies (and tools) are my hobby. I’m also using it to improve and optimize my design and business workflow. I'm building Vue.js/AngularJS prototypes when's needed.</p>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-7">
+            photo
+          </div>
+        </div>
+        <div class="row make-some-room">
+          <div class="col-lg-5">
             <h4>Business</h4>
             <p class="">I’m a business thinker. Making users happy is a first, the second one is to make business happy. Building amazing products is for solving peoples struggle but also is making money and reaching designated markets.</p>
-            <ul class="list-group">
-              <li class="list-group-item">Cras justo odio</li>
-              <li class="list-group-item">Dapibus ac facilisis in</li>
-              <li class="list-group-item">Morbi leo risus</li>
-              <li class="list-group-item">Porta ac consectetur ac</li>
-              <li class="list-group-item">Vestibulum at eros</li>
-            </ul>
+          </div>
+          <div class="col-lg-7">
+            photo
           </div>
         </div>
       </div>
@@ -76,40 +77,59 @@
             <div class="col-lg-12">
               <div class="card-deck">
               <div class="card card-inverse">
-                <div class="card-block">
-                  <h4 class="card-title">Define</h4>
+                <div class="card-body">
+                  <h4 class="card-title">Strategy</h4>
                   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Stakeholder interviews</li>
+                  <li class="list-group-item">Project vision & goals</li>
+                  <li class="list-group-item">Measure of success</li>
+                </ul>
               </div>
               <div class="card card-inverse">
-                <div class="card-block">
-                  <h4 class="card-title">Ideate</h4>
+                <div class="card-body">
+                  <h4 class="card-title">Discovery</h4>
                   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Business requirements</li>
+                  <li class="list-group-item">User iterviews</li>
+                  <li class="list-group-item">Value Proposition Canvas</li>
+                </ul>
               </div>
               <div class="card card-inverse">
-                <div class="card-block">
-                  <h4 class="card-title">Prototype</h4>
+                <div class="card-body">
+                  <h4 class="card-title">Analysis</h4>
                   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Storyboarding</li>
+                  <li class="list-group-item">Personas</li>
+                  <li class="list-group-item">Experience maps</li>
+                </ul>
               </div>
               <div class="card card-inverse">
-                <div class="card-block">
-                  <h4 class="card-title">Build</h4>
+                <div class="card-body">
+                  <h4 class="card-title">Design</h4>
                   <p class="card-text">With supporting text </p>
                 </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Sketching & wireframing</li>
+                  <li class="list-group-item">UI & Prototyping</li>
+                  <li class="list-group-item">User testing</li>
+                </ul>
               </div>
               <div class="card card-inverse">
-                <div class="card-block">
-                  <h4 class="card-title">Analyze</h4>
+                <div class="card-body">
+                  <h4 class="card-title">Production</h4>
                   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                 </div>
-              </div>
-              <div class="card card-inverse">
-                <div class="card-block">
-                  <h4 class="card-title">Iterate</h4>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">BETA Launch</li>
+                  <li class="list-group-item">Quantitative analysis</li>
+                  <li class="list-group-item">User Testing</li>
+                </ul>
               </div>
             </div>
             </div>
@@ -126,50 +146,18 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <div class="card card-project">
-              <router-link to="MyWay"><img class="card-img-top" src="../assets/myway/myway.png" alt="MyWay"></router-link>
-              <div class="card-block">
-                <h4><router-link to="MyWay">MyWay</router-link></h4>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#/">Read case study &rarr;</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="card card-project">
-              <img class="card-img-top" src="../assets/cambridge_half.png" alt="Project name">
-              <div class="card-block">
-                <h4>Cambridge Satchel Company</h4>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#/">Read on Behance &rarr;</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="card card-project">
-              <img class="card-img-top" src="../assets/cambridge_half.png" alt="Project name">
-              <div class="card-block">
-                <h4>Project name</h4>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#/">Read on Medium &rarr;</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="card card-project" v-for="project in projects" :key="project.id">
-              <img class="card-img-top" :src="project.cover" :alt="project.name">
-              <div class="card-block">
+            <div class="row" v-for="project in projects" :key="project.id">
+              <div class="col-lg-5">
                 <h4>{{project.name}}</h4>
-                <p class="card-text">{{project.description}}</p>
+                <p class="card-text measure">{{project.description}}</p>
                 <a v-if="project.medium" :href="project.medium">Read on Medium &rarr;</a>
                 <a v-if="project.link" :href="project.link">Read case study &rarr;</a>
-                <a v-if="project.behance" :href="project.behance">Show on Behance &rarr;</a>
+                <a v-if="project.behance" :href="project.behance">View on Behance &rarr;</a>
+              </div>
+              <div class="col-lg-7">
+                <div class="card card-project">
+                  <img class="card-img-top" :src="project.cover" :alt="project.name">
+                </div>
               </div>
             </div>
           </div>
@@ -192,23 +180,29 @@ export default {
       projects: [
         {
           name: 'MyWay',
-          description: 'Lorem ipsum short description',
-          cover: '/static/myway/myway.png',
+          description: 'Managing your perfect work life balance. Modern type of calendar.',
+          cover: '/static/myway/myway_cover.png',
           link: '',
           medium: 'https://medium.freecodecamp.org/grabs-front-end-guide-for-large-teams-484d4033cc41',
           behance: ''
         },
         {
-          name: 'Cambridge Satchel',
-          description: 'Lorem ipsum short description',
-          cover: '/static/cambridge_half.png',
-          link: 'cambridge'
+          name: 'The Cambridge Satchel Company',
+          description: 'Redesign proposal.',
+          cover: '/static/cambridge/cambridge_cover.png',
+          behance: 'https://www.behance.net/gallery/55695313/The-Cambridge-Satchel-Company?'
         },
         {
           name: 'Disc Museum',
           description: 'Lorem ipsum short description',
           cover: '/static/cambridge_half.png',
           behance: 'https://www.behance.net/gallery/54979335/Montreal-Espace-Pour-La-Vie-cards'
+        },
+        {
+          name: 'Swift: Drink Sociably',
+          description: 'No more wasting time queuing at a noisy bar. With Swift you order and pay for your drinks directly from your phone, skip the queue and pick them up.',
+          cover: '/static/swift/swift_cover.png',
+          behance: 'https://www.behance.net/gallery/55754117/Swift-Drink-Sociably?'
         }
       ]
     }

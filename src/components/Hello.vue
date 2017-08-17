@@ -31,7 +31,7 @@
             <p class="">Empathy to the users came to very natural. I’m a problem solver and my biggest goal is to make users happy. With more than 10 years of experience in digital design and artistic soul I’ve developed an eye to create beautiful interfaces and smooth and engaging user flows.</p>
           </div>
           <div class="col-lg-7">
-            <ul class="photos list-unstyled list-inline">
+            <!-- <ul class="photos list-unstyled list-inline">
               <li><img src="/static/atwork/atwork_1_300w.jpg" alt=""></li>
               <li><img src="/static/atwork/atwork_2_300w.jpg" alt=""></li>
               <li><img src="/static/atwork/atwork_3_300w.jpg" alt=""></li>
@@ -40,7 +40,7 @@
               <li><img src="/static/atwork/atwork_6_300w.jpg" alt=""></li>
               <li><img src="/static/atwork/atwork_7_300w.jpg" alt=""></li>
               <li><img src="/static/atwork/atwork_8_300w.jpg" alt=""></li>
-            </ul>
+            </ul> -->
           </div>
         </div>
         <div class="row make-some-room">
@@ -49,7 +49,7 @@
             <p class="">Front-end development and being up to date with new technologies (and tools) are my hobby. I’m also using it to improve and optimize my design and business workflow. I'm building Vue.js/AngularJS prototypes when's needed.</p>
           </div>
           <div class="col-lg-7">
-            photo
+            <!-- photo -->
           </div>
         </div>
         <div class="row make-some-room">
@@ -58,7 +58,7 @@
             <p class="">I’m a business thinker. Making users happy is a first, the second one is to make business happy. Building amazing products is for solving peoples struggle but also is making money and reaching designated markets.</p>
           </div>
           <div class="col-lg-7">
-            photo
+            <!-- photo -->
           </div>
         </div>
       </div>

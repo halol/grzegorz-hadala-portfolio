@@ -9,9 +9,9 @@
             <!-- <a href="/hireme" class="btn btn-sm btn-primary">Hire me</a> -->
           </div>
           <div class="col-lg-4 text-right">
-            <a href="#">Medium</a> &mdash;
-            <a href="#">LinkedIn</a> &mdash;
-            <a href="#">Behance</a>
+            <!-- <a href="#">Medium</a> &mdash; -->
+            <a href="https://www.linkedin.com/in/grzegorzhadala/" target="_blank">LinkedIn</a> &mdash;
+            <a href="https://www.behance.net/greghadala" target="_blank">Behance</a>
           </div>
         </div>
       </div>

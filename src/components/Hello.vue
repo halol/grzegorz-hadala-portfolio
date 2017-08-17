@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-lg-7">
             <h1 class="change-hi"><vue-typer :text='["Siema!", "Hello!", "¡Hola!"]'></vue-typer></h1>
-            <h1 class="welcome">I'm Grzegorz Hadala, a <span class="highlight">Product Designer</span> based in <span class="underline" data-title="But can work anywhere 🌎 🌍 🌏">London</span>. I&nbsp;build products that work for people, business and my mum too.</h1>
+            <h1 class="welcome">I'm Grzegorz Hadala, a <span class="highlight">Product Designer</span> based in <span class="underline" data-title="But can work anywhere 🌎 🌍 🌏">London</span>. I&nbsp;build products that work for people and business.</h1>
           </div>
           <div class="col-lg-5">
             <div class="circles">

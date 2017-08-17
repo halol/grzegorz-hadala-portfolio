@@ -3,15 +3,17 @@
     <nav class="nav" v-if="$route.name != 'hireme'">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8">
-            Grzegorz Hadala, Product Designer 
+          <div class="col-lg-8 hide-xs">
+            Grzegorz Hadala, Product Designer
             <!-- &nbsp; &mdash;&mdash;&mdash; &nbsp; -->
             <!-- <a href="/hireme" class="btn btn-sm btn-primary">Hire me</a> -->
           </div>
           <div class="col-lg-4 text-right">
             <!-- <a href="#">Medium</a> &mdash; -->
-            <a href="https://www.linkedin.com/in/grzegorzhadala/" target="_blank">LinkedIn</a> &mdash;
-            <a href="https://www.behance.net/greghadala" target="_blank">Behance</a>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/grzegorzhadala/" target="_blank">LinkedIn</a> <span>&mdash;</span>
+              <a href="https://www.behance.net/greghadala" target="_blank">Behance</a>
+            </div>
           </div>
         </div>
       </div>
@@ -45,9 +47,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 }
 body {
-  padding-bottom: 100px;
+  //padding-bottom: 100px;
 }
-
+.make-some-room {
+  padding: 32px 0 0 0;
+}
 a {
   color: #43B5FA;
   transition: all 0.25s ease;
@@ -57,14 +61,11 @@ a {
   }
 }
 #app {
-  // font-family: 'Roboto', sans-serif;
   font-family: 'Muli', sans-serif;
-  // font-family: 'Noto Serif', serif;
-
-  // font-family: 'Montserrat', sans-serif;
-
-  // font-family: 'Cormorant Garamond', serif;
   overflow: hidden;
+}
+
+.measure {
 
 }
 p {
@@ -72,10 +73,12 @@ p {
   line-height: 1.125em * 1.3;
 }
 h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-  font-weight: bold;
+  //font-family: 'Playfair Display', serif;
+  font-weight: 900;
   color: #292b2c;
+
 }
+
 h4 {
   font-weight: bold;
 }
@@ -138,7 +141,9 @@ h4 {
   color: #292b2c;
 }
 
-
+.row {
+  margin-bottom: 32px;
+}
 
 .apparate {
 	opacity: 0;
@@ -179,5 +184,37 @@ h4 {
 
 .fade-enter, .fade-leave-active {
   opacity: 0
+}
+
+
+
+@media (max-width: 414px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .measure {
+    //max-width: 100%;
+    margin-bottom: 32px;
+  }
+  .hide-xs {
+    display: none;
+  }
+  .social-links {
+    text-align: center;
+    > a {
+      display: inline-block;
+      width: 49%;
+      padding: 16px 0;
+      // outline: 1px solid red;
+    }
+    span {
+      display: none;
+    }
+  }
+  .nav {
+    padding: 0;
+
+  }
 }
 </style>

@@ -5,138 +5,21 @@
         <div class="row">
           <div class="col-lg-7">
             <h1 class="change-hi"><vue-typer :text='["Siema!", "Hello!", "¡Hola!"]'></vue-typer></h1>
-            <h1 class="welcome">I'm Grzegorz Hadala, a <span class="highlight">Product Designer</span> based in <span class="underline" data-title="But can work anywhere 🌎 🌍 🌏">London</span>. I&nbsp;build products that work for people and business.</h1>
+            <h1 class="welcome"><span class="highlight">I'm Greg &mdash; Product Designer</span> based in <span class="underline" data-title="But can work anywhere 🌎 🌍 🌏">London</span>. <br> I&nbsp;build products that work for people and business.</h1>
           </div>
           <div class="col-lg-5">
             <div class="circles">
-              <div class="circle circle--1">UX</div>
-              <div class="circle circle--2">TECH</div>
-              <div class="circle circle--3">BUSINESS</div>
+              <a class="circle circle--1" v-scroll-to="{ el: '#ux', offset: -200 }">UX</a>
+              <a class="circle circle--2" v-scroll-to="{ el: '#tech', offset: -200 }">TECH</a>
+              <a class="circle circle--3" v-scroll-to="{ el: '#business', offset: -200 }">BUSINESS</a>
               <div class="circle me">ME</div>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <section class="description">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h2>What I do</h2>
-          </div>
-        </div>
-        <div class="row make-some-room">
-          <div class="col-lg-5">
-            <h4>UX & UI</h4>
-            <p class="">Empathy to the users came to very natural. I’m a problem solver and my biggest goal is to make users happy. With more than 10 years of experience in digital design and artistic soul I’ve developed an eye to create beautiful interfaces and smooth and engaging user flows.</p>
-          </div>
-          <div class="col-lg-7">
-            <!-- <ul class="photos list-unstyled list-inline">
-              <li><img src="/static/atwork/atwork_1_300w.jpg" alt=""></li>
-              <li><img src="/static/atwork/atwork_2_300w.jpg" alt=""></li>
-              <li><img src="/static/atwork/atwork_3_300w.jpg" alt=""></li>
-              <li><img src="/static/atwork/atwork_4_300w.jpg" alt=""></li>
-              <li><img src="/static/atwork/atwork_5_300w.jpg" alt=""></li>
-              <li><img src="/static/atwork/atwork_6_300w.jpg" alt=""></li>
-              <li><img src="/static/atwork/atwork_7_300w.jpg" alt=""></li>
-              <li><img src="/static/atwork/atwork_8_300w.jpg" alt=""></li>
-            </ul> -->
-          </div>
-        </div>
-        <div class="row make-some-room">
-          <div class="col-lg-5">
-            <h4>Tech</h4>
-            <p class="">Front-end development and being up to date with new technologies (and tools) are my hobby. I’m also using it to improve and optimize my design and business workflow. I'm building Vue.js/AngularJS prototypes when's needed.</p>
-          </div>
-          <div class="col-lg-7">
-            <!-- photo -->
-          </div>
-        </div>
-        <div class="row make-some-room">
-          <div class="col-lg-5">
-            <h4>Business</h4>
-            <p class="">I’m a business thinker. Making users happy is a first, the second one is to make business happy. Building amazing products is for solving peoples struggle but also is making money and reaching designated markets.</p>
-          </div>
-          <div class="col-lg-7">
-            <!-- photo -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="process">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h2>Process</h2>
-          </div>
-        </div>
-      </div>
-      <div class="process-table">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="card-deck">
-              <div class="card card-inverse">
-                <div class="card-body">
-                  <h4 class="card-title">Strategy</h4>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Stakeholder interviews</li>
-                  <li class="list-group-item">Project vision & goals</li>
-                  <li class="list-group-item">Measure of success</li>
-                </ul>
-              </div>
-              <div class="card card-inverse">
-                <div class="card-body">
-                  <h4 class="card-title">Discovery</h4>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Business requirements</li>
-                  <li class="list-group-item">User iterviews</li>
-                  <li class="list-group-item">Value Proposition Canvas</li>
-                </ul>
-              </div>
-              <div class="card card-inverse">
-                <div class="card-body">
-                  <h4 class="card-title">Analysis</h4>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Storyboarding</li>
-                  <li class="list-group-item">Personas</li>
-                  <li class="list-group-item">Experience maps</li>
-                </ul>
-              </div>
-              <div class="card card-inverse">
-                <div class="card-body">
-                  <h4 class="card-title">Design</h4>
-                  <p class="card-text">With supporting text </p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Sketching & wireframing</li>
-                  <li class="list-group-item">UI & Prototyping</li>
-                  <li class="list-group-item">User testing</li>
-                </ul>
-              </div>
-              <div class="card card-inverse">
-                <div class="card-body">
-                  <h4 class="card-title">Production</h4>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">BETA Launch</li>
-                  <li class="list-group-item">Quantitative analysis</li>
-                  <li class="list-group-item">User Testing</li>
-                </ul>
-              </div>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <part-description></part-description>
+    <part-process></part-process>
     <section class="featured">
       <div class="container">
         <div class="row">
@@ -150,15 +33,30 @@
               <div class="col-lg-5">
                 <h4>{{project.name}}</h4>
                 <p class="card-text measure">{{project.description}}</p>
-                <a v-if="project.medium" :href="project.medium">Read on Medium &rarr;</a>
-                <a v-if="project.link" :href="project.link">Read case study &rarr;</a>
-                <a v-if="project.behance" :href="project.behance">View on Behance &rarr;</a>
+                <a v-if="project.medium" :href="project.medium" class="project-link">Read on Medium &rarr;</a>
+                <a v-if="project.link" :href="project.link" class="project-link">Read case study &rarr;</a>
+                <a v-if="project.behance" :href="project.behance" class="project-link">View on Behance &rarr;</a>
               </div>
               <div class="col-lg-7">
-                <div class="card card-project">
-                  <img class="card-img-top" :src="project.cover" :alt="project.name">
-                </div>
+                  <a v-if="project.medium" :href="project.medium"><img class="card-img-top" :src="project.cover" :alt="project.name"></a>
+                  <a v-if="project.link" :href="project.link"><img class="card-img-top" :src="project.cover" :alt="project.name"></a>
+                  <a v-if="project.behance" :href="project.behance"><img class="card-img-top" :src="project.cover" :alt="project.name"></a>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>Brands I worked with</h2>
+            <ul class="brands list-unstyled">
+              <li class="brand-item" v-for="brand in orderBy(brands, 'year', -1)" :key="brand.id"><a :href="brand.link">{{brand.label}} <span>&mdash; {{brand.year}}</span></a></li>
+            </ul>
+            <div class="alert alert-secondary" role="alert">
+              Portfolio under development
             </div>
           </div>
         </div>
@@ -168,36 +66,50 @@
 </template>
 
 <script>
-// /import VueTyperPlugin from 'vue-typer'
 import { VueTyper } from 'vue-typer'
+import PartProcess from '@/components/PartProcess.vue'
+import PartDescription from '@/components/PartDescription.vue'
 export default {
-  components: {
-    'vue-typer': VueTyper
-  },
   name: 'hello',
+  components: {
+    'vue-typer': VueTyper,
+    'part-process': PartProcess,
+    'part-description': PartDescription
+  },
+  children: {
+    name: 'part-process'
+  },
   data () {
     return {
+      brands: [
+        { label: 'Allegro', year: 2015 },
+        { label: 'PayU', year: 2015 },
+        { label: 'Orsay', year: 2009 },
+        { label: 'Cisco', year: 2010 },
+        { label: 'Asus', year: 2011 },
+        { label: 'WhenYouMove', year: 2015 },
+        { label: 'Heero', year: 2016 },
+        { label: 'MyPocketPro', year: 2016 },
+        { label: 'JobStars', year: 2016 },
+        { label: 'Disc Musuem', year: 2017 },
+        { label: 'MyWay', year: 2017 },
+        { label: 'Kids Know Best', year: 2016 },
+        { label: 'MH Systems', year: 2015 },
+        { label: 'MyVitae', year: 2016 },
+        { label: 'Swift', year: 2016 },
+        { label: 'Latetrip.com', year: 2016 },
+        { label: 'Miasto Kraków', year: 2008 },
+        { label: 'Prozak', year: 2009 },
+        { label: 'Frantik', year: 2009 },
+        { label: 'Cień', year: 2009 }
+      ],
       projects: [
-        // {
-        //   name: 'MyWay',
-        //   description: 'Managing your perfect work life balance. Modern type of calendar.',
-        //   cover: '/static/myway/myway_cover.png',
-        //   link: '',
-        //   medium: 'https://medium.freecodecamp.org/grabs-front-end-guide-for-large-teams-484d4033cc41',
-        //   behance: ''
-        // },
         {
           name: 'The Cambridge Satchel Company',
           description: 'Redesign proposal.',
           cover: '/static/cambridge/cambridge_cover.png',
           behance: 'https://www.behance.net/gallery/55695313/The-Cambridge-Satchel-Company?'
         },
-        // {
-        //   name: 'Disc Museum',
-        //   description: 'Lorem ipsum short description',
-        //   cover: '/static/cambridge_half.png',
-        //   behance: 'https://www.behance.net/gallery/54979335/Montreal-Espace-Pour-La-Vie-cards'
-        // },
         {
           name: 'Swift: Drink Sociably',
           description: 'No more wasting time queuing at a noisy bar. With Swift you order and pay for your drinks directly from your phone, skip the queue and pick them up.',

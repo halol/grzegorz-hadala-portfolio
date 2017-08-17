@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-lg-8">
             Grzegorz Hadala, Product Designer &nbsp; &mdash;&mdash;&mdash; &nbsp;
-            <a href="/hireme" class="btn btn-sm btn-primary">Hire me</a>
+            <!-- <a href="/hireme" class="btn btn-sm btn-primary">Hire me</a> -->
           </div>
           <div class="col-lg-4 text-right">
             <a href="#">Medium</a> &mdash;

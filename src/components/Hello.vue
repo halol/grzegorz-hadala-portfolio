@@ -178,26 +178,26 @@ export default {
   data () {
     return {
       projects: [
-        {
-          name: 'MyWay',
-          description: 'Managing your perfect work life balance. Modern type of calendar.',
-          cover: '/static/myway/myway_cover.png',
-          link: '',
-          medium: 'https://medium.freecodecamp.org/grabs-front-end-guide-for-large-teams-484d4033cc41',
-          behance: ''
-        },
+        // {
+        //   name: 'MyWay',
+        //   description: 'Managing your perfect work life balance. Modern type of calendar.',
+        //   cover: '/static/myway/myway_cover.png',
+        //   link: '',
+        //   medium: 'https://medium.freecodecamp.org/grabs-front-end-guide-for-large-teams-484d4033cc41',
+        //   behance: ''
+        // },
         {
           name: 'The Cambridge Satchel Company',
           description: 'Redesign proposal.',
           cover: '/static/cambridge/cambridge_cover.png',
           behance: 'https://www.behance.net/gallery/55695313/The-Cambridge-Satchel-Company?'
         },
-        {
-          name: 'Disc Museum',
-          description: 'Lorem ipsum short description',
-          cover: '/static/cambridge_half.png',
-          behance: 'https://www.behance.net/gallery/54979335/Montreal-Espace-Pour-La-Vie-cards'
-        },
+        // {
+        //   name: 'Disc Museum',
+        //   description: 'Lorem ipsum short description',
+        //   cover: '/static/cambridge_half.png',
+        //   behance: 'https://www.behance.net/gallery/54979335/Montreal-Espace-Pour-La-Vie-cards'
+        // },
         {
           name: 'Swift: Drink Sociably',
           description: 'No more wasting time queuing at a noisy bar. With Swift you order and pay for your drinks directly from your phone, skip the queue and pick them up.',

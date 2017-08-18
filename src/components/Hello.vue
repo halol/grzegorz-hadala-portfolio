@@ -20,7 +20,7 @@
     </header>
     <part-description id="what"></part-description>
     <part-process id="process"></part-process>
-    <section class="featured">
+    <section class="featured" id="work">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
@@ -50,7 +50,7 @@
     <section class="footer" id="brands">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8">
+          <div class="col-lg-12">
             <h5>Brands I've worked with</h5>
             <ul class="brands list-unstyled">
               <li class="brand-item" v-for="brand in orderBy(brands, 'year', -1)" :key="brand.id"><a :href="brand.link">{{brand.label}} <span>&mdash; {{brand.year}}</span></a></li>
@@ -59,12 +59,12 @@
               Portfolio under development
             </div>
           </div>
-          <div class="col-lg-4">
+          <!-- <div class="col-lg-4">
             <h5>Services</h5>
             <ul class="brands list-unstyled columns-1">
               <li>User Experience Design</li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>

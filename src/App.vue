@@ -8,6 +8,7 @@
       <nav class="nav">
         <router-link to="/#what" activeClass="active">What I do</router-link>
         <router-link to="/#process" activeClass="active">Process</router-link>
+        <router-link to="/#work" activeClass="active">Work</router-link>
         <router-link to="/#brands" activeClass="active">Brands</router-link>
       </nav>
       
@@ -102,7 +103,7 @@ h4 {
   //bottom: 0;
   bottom: 0;
   //float: right;
-  outline: 1px solid red;
+  //outline: 1px solid red;
   display: flex;
   flex-direction: row;
   flex-flow: row-reverse;
@@ -123,12 +124,12 @@ h4 {
     line-height: 64px;
     padding: 0 16px;
     display: inline-block;
-    outline: 1px solid green;
+    //outline: 1px solid green;
     font-weight: 900;
     text-transform: uppercase;
     font-size: 14px;
     &.active {
-      color: blue;
+      color: #FAE543;
     }
   }
 }

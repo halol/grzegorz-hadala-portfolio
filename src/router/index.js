@@ -3,7 +3,8 @@ import Router from 'vue-router'
 import VueAnalytics from 'vue-analytics'
 import VueScrollTo from 'vue-scrollto'
 import Vue2Filters from 'vue2-filters'
-
+import vueSmoothScroll from 'vue-smooth-scroll'
+Vue.use(vueSmoothScroll)
 Vue.use(Vue2Filters)
 // Components
 import Hello from '@/components/Hello'
@@ -18,6 +19,27 @@ Vue.use(VueAnalytics, {
 
 export default new Router({
   mode: 'history',
+  scrollBehavior: (to, from, savedPosition) => {
+    if (to.hash) {
+      var options = {
+        easing: 'ease-in',
+        offset: -60,
+        cancelable: true,
+        onDone: function () {
+          // scrolling is done
+        },
+        onCancel: function () {
+          // scrolling has been interrupted
+        }
+      }
+      VueScrollTo.scrollTo(to.hash, options)
+    }
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return {x: 0, y: 0}
+    }
+  },
   routes: [
     {
       path: '/',

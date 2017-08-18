@@ -1,23 +1,20 @@
 <template>
   <div id="app">
-    <nav class="nav" v-if="$route.name != 'hireme'">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 hide-xs">
-            Grzegorz Hadala, Product Designer
-            <!-- &nbsp; &mdash;&mdash;&mdash; &nbsp; -->
-            <!-- <a href="/hireme" class="btn btn-sm btn-primary">Hire me</a> -->
-          </div>
-          <div class="col-lg-4 text-right">
-            <!-- <a href="#">Medium</a> &mdash; -->
-            <div class="social-links">
-              <a href="https://www.linkedin.com/in/grzegorzhadala/" target="_blank">LinkedIn</a> <span>&mdash;</span>
-              <a href="https://www.behance.net/greghadala" target="_blank">Behance</a>
-            </div>
-          </div>
-        </div>
+    <div class="sidebar">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/grzegorzhadala/" target="_blank"><img src="./assets/linkedin-161.svg"></a>
+        <a href="https://www.behance.net/greghadala" target="_blank"><img src="./assets/behance-163.svg"></a>
       </div>
-    </nav>
+      <nav class="nav">
+        <router-link to="/#what" activeClass="active">What I do</router-link>
+        <router-link to="/#process" activeClass="active">Process</router-link>
+        <router-link to="/#brands" activeClass="active">Brands</router-link>
+      </nav>
+      
+      <button class="scroll-up" v-scroll-to="{ el: '#app', offset: -0 }">up</button>
+    </div>
+    
+    
     <transition name="fade" mode="out-in" appear>
       <router-view></router-view>
     </transition>
@@ -48,6 +45,8 @@ export default {
 }
 body {
   //padding-bottom: 100px;
+  padding-left: 64px;
+  position: relative;
 }
 .make-some-room {
   padding: 32px 0 0 0;
@@ -55,6 +54,7 @@ body {
 a {
   color: #43B5FA;
   transition: all 0.25s ease;
+
   &:hover {
     color: darken(#43B5FA, 20%);
     text-decoration: none;
@@ -64,15 +64,11 @@ a {
   font-family: 'Muli', sans-serif;
   overflow: hidden;
 }
-
-.measure {
-
-}
 p {
   font-size: 1.125em;
   line-height: 1.125em * 1.3;
 }
-h1, h2, h3 {
+h1, h2, h3, h5 {
   //font-family: 'Playfair Display', serif;
   font-weight: 900;
   color: #292b2c;
@@ -82,26 +78,80 @@ h1, h2, h3 {
 h4 {
   font-weight: bold;
 }
-.nav {
-  padding: 16px 0;
-  // font-weight: bold;
-  position: fixed;
+.scroll-up {
+  position:fixed;
   bottom: 0;
-  z-index: 900;
+  left: 0;
+  height: 64px;
+  width: 64px;
   background: black;
+  border: 0;
   color: white;
-  width: 100%;
+}
+.sidebar {
+  position: fixed;
+  width: 64px;
+  background: black;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.nav {
+  // font-weight: bold;
+  position: absolute;
+  //bottom: 0;
+  bottom: 0;
+  //float: right;
+  outline: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row-reverse;
+  width: calc(100vh - 64px);
+  text-align: right;
+  transform-origin: 0 0;
+  //width:100vh;
+  z-index: 200;
+  //background: black;
+  color: white;
+  transform: rotate(-90deg);
   p {
     margin:0;
   }
+  > a {
+    color: white;
+    //float: right;
+    line-height: 64px;
+    padding: 0 16px;
+    display: inline-block;
+    outline: 1px solid green;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 14px;
+    &.active {
+      color: blue;
+    }
+  }
 }
-.nav .separator {
-  display: inline-block;
-  position: relative;
-  width: 100px;
-  margin: 0 32px;
-  border-bottom: 1px solid white;
-  top: -3px;
+.container-fluid {
+  padding: 0 64px;
+}
+.social-links {
+  position: absolute;
+  bottom: 64px;
+  z-index: 500;
+  > a {
+    width: 64px;
+    height: 64px;
+    display: block;
+    text-align: center;
+    line-height: 64px;
+    > {
+      img {
+        width: 24px;
+        height: auto;
+      }
+    }
+  }
 }
 .highlight {
   background-color: #FAE543;

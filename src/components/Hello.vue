@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <header class ="main-header">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-lg-7">
             <h1 class="change-hi"><vue-typer :text='["Siema!", "Hello!", "¡Hola!"]'></vue-typer></h1>
@@ -18,8 +18,8 @@
         </div>
       </div>
     </header>
-    <part-description></part-description>
-    <part-process></part-process>
+    <part-description id="what"></part-description>
+    <part-process id="process"></part-process>
     <section class="featured">
       <div class="container">
         <div class="row">
@@ -47,17 +47,23 @@
         </div>
       </div>
     </section>
-    <section class="footer">
+    <section class="footer" id="brands">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
-            <h2>Brands I worked with</h2>
+          <div class="col-lg-8">
+            <h5>Brands I've worked with</h5>
             <ul class="brands list-unstyled">
               <li class="brand-item" v-for="brand in orderBy(brands, 'year', -1)" :key="brand.id"><a :href="brand.link">{{brand.label}} <span>&mdash; {{brand.year}}</span></a></li>
             </ul>
             <div class="alert alert-secondary" role="alert">
               Portfolio under development
             </div>
+          </div>
+          <div class="col-lg-4">
+            <h5>Services</h5>
+            <ul class="brands list-unstyled columns-1">
+              <li>User Experience Design</li>
+            </ul>
           </div>
         </div>
       </div>

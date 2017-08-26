@@ -2,13 +2,42 @@
   // padding: 15em 0 5em 0;
   padding: 20vh 0 10vh 0;
   @media (max-width: 414px) {
-    padding: 3em 0 5em 0;
+    padding: 3em 0;
   }
 }
 .welcome {
   line-height: 1.25;
 }
-
+.project-link {
+  background: white;
+  border: 2px solid #43B5FA;
+  padding: 8px 16px;
+  display: inline-block;
+  position: relative;
+  color: #43B5FA;
+  font-weight: 900;
+  
+  &:after {
+    transition: all 0.25s ease;
+    display: block;
+    content: '';
+    width: calc(100% + 4px);
+    position: absolute;
+    height: inherit;
+    background: rgba(#43B5FA, .5);
+    height: 44px;
+    top: 4px;
+    left: 4px;
+    z-index: -1;
+  }
+  &:hover {
+    &:after {
+      top: 0;
+      left: 0;
+    }
+    
+  }
+}
 
 h2 {
   margin-bottom: 1em;
@@ -183,8 +212,8 @@ h2 {
   }
   .project-link {
     display: inline-block;
-    border: 1px solid #43B5FA;
-    border-radius: 6px;
+    // border: 1px solid #43B5FA;
+    // border-radius: 6px;
     padding: 8px 16px;
     margin-bottom: 32px;
   }

@@ -4,6 +4,7 @@
       <div class="social-links">
         <a href="https://www.linkedin.com/in/grzegorzhadala/" target="_blank"><img src="./assets/linkedin-161.svg"></a>
         <a href="https://www.behance.net/greghadala" target="_blank"><img src="./assets/behance-163.svg"></a>
+        <a href="https://www.twitter.com/GregHadala" target="_blank"><img src="./assets/twitter-154.svg"></a>
       </div>
       <nav class="nav">
         <router-link to="/#what" activeClass="active">What I do</router-link>
@@ -12,7 +13,7 @@
         <router-link to="/#brands" activeClass="active">Brands</router-link>
       </nav>
       
-      <button class="scroll-up" v-scroll-to="{ el: '#app', offset: -0 }">up</button>
+      <button class="scroll-up" v-scroll-to="{ el: '#hello', offset: -0 }"><img src="./assets/arrow-up.svg" width="24" alt=""></button>
     </div>
     
     
@@ -52,10 +53,11 @@ body {
 .make-some-room {
   padding: 32px 0 0 0;
 }
+a, button {
+  transition: all 0.25s ease;
+}
 a {
   color: #43B5FA;
-  transition: all 0.25s ease;
-
   &:hover {
     color: darken(#43B5FA, 20%);
     text-decoration: none;
@@ -67,7 +69,19 @@ a {
 }
 p {
   font-size: 1.125em;
-  line-height: 1.125em * 1.3;
+  line-height: 150%;
+  // text-align: justify;
+  &.measure {
+    max-width: 70%;
+  }
+  &.lead {
+    font-size: 1.5em;
+    // text-align: justify;
+    // font-weight: 200;
+    > strong {
+      font-weight: bold;
+    }
+  }
 }
 h1, h2, h3, h5 {
   //font-family: 'Playfair Display', serif;
@@ -76,6 +90,10 @@ h1, h2, h3, h5 {
 
 }
 
+
+h2 {
+  text-transform: uppercase;
+}
 h4 {
   font-weight: bold;
 }
@@ -85,25 +103,25 @@ h4 {
   left: 0;
   height: 64px;
   width: 64px;
-  background: black;
+  background: #333;
   border: 0;
   color: white;
+  &:hover {
+    cursor: pointer;
+    background: black;
+  }
 }
 .sidebar {
   position: fixed;
   width: 64px;
-  background: black;
+  background: #333;
   left: 0;
   top: 0;
   bottom: 0;
 }
 .nav {
-  // font-weight: bold;
   position: absolute;
-  //bottom: 0;
   bottom: 0;
-  //float: right;
-  //outline: 1px solid red;
   display: flex;
   flex-direction: row;
   flex-flow: row-reverse;
@@ -129,7 +147,8 @@ h4 {
     text-transform: uppercase;
     font-size: 14px;
     &.active {
-      color: #FAE543;
+      color: black;
+      background: white;
     }
   }
 }
@@ -240,9 +259,33 @@ h4 {
 
 
 @media (max-width: 414px) {
+  body {
+    padding-left: 48px;
+  }
+  p.lead {
+    font-size: 1.2em;
+  }
   .container {
     padding-left: 32px;
     padding-right: 32px;
+  }
+  .sidebar {
+    width: 48px;
+    .nav {
+      width: calc(100vh - 48px);
+      a {
+        line-height: 48px;
+        padding: 0 16px;
+      }
+    }
+    .scroll-up {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  .container-fluid {
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .measure {
     //max-width: 100%;

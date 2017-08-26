@@ -1,0 +1,50 @@
+.card-inverse {
+  border-radius: 0;
+  border-width: 2px;
+  border-color: black;
+  .list-group {
+    border: none;
+    .list-group-item {
+      border: none;
+      background: transparent;
+    }
+  }
+  &:after {
+    transition: all 0.25s ease;
+    display: block;
+    content: '';
+    width: calc(100% + 4px);
+    position: absolute;
+    height: calc(100% + 4px);
+    background: rgba(black, .5);
+    top: 4px;
+    left: 4px;
+    z-index: -1;
+  }
+
+  @for $i from 1 through 6 {
+    &.card-#{$i} {
+      position: relative;
+      $value: 26;
+      color: adjust-hue(#43B5FA, $value * $i);
+      border-color: adjust-hue(#43B5FA, $value * $i);
+      .list-group {
+        .list-group-item {
+          color: adjust-hue(#43B5FA, $value * $i);
+        }
+      }
+      &:after {
+        transition: all 0.25s ease;
+        display: block;
+        content: '';
+        width: calc(100% + 4px);
+        position: absolute;
+        height: calc(100% + 4px);
+        background: rgba(adjust-hue(#43B5FA, $value * $i), .5);
+        top: 4px;
+        left: 4px;
+        z-index: -1;
+      }
+    }
+  }
+}

@@ -1,19 +1,12 @@
 <template>
   <div class="hello">
-    <header class ="main-header">
+    <header class="main-header" id="hello">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-7">
-            <h1 class="change-hi"><vue-typer :text='["Siema!", "Hello!", "¡Hola!"]'></vue-typer></h1>
-            <h1 class="welcome"><span class="highlight">I'm Greg &mdash; Product Designer</span> based in <span class="underline" data-title="But can work anywhere 🌎 🌍 🌏">London</span>. <br> I&nbsp;build products that work for people and business.</h1>
-          </div>
-          <div class="col-lg-5">
-            <div class="circles">
-              <a class="circle circle--1" v-scroll-to="{ el: '#ux', offset: -200 }">UX</a>
-              <a class="circle circle--2" v-scroll-to="{ el: '#tech', offset: -200 }">TECH</a>
-              <a class="circle circle--3" v-scroll-to="{ el: '#business', offset: -200 }">BUSINESS</a>
-              <div class="circle me">ME</div>
-            </div>
+            <p class="change-hi"><vue-typer :text='["Siema!", "Hello!", "¡Hola!"]'></vue-typer></p>
+            <!-- <p class="welcome">I'm Greg &mdash; Product Designer based in London. <br> I&nbsp;build products that work for people and business.</p> -->
+            <p class="lead">I'm <strong>Grzegorz Hadala &mdash; Product Designer</strong> with 3 years of practice with building beautiful mobile and web products with great experiences and 7 years as a multidisciplinary digital designer in print, marketing and advertising. Worked with different types of target markets and delivered more than 30 mobile apps and websites in the corporate, start-up and a freelance environment. Design thinker, artistic soul and the problem solver with a pragmatic and holistic approach.</p>
           </div>
         </div>
       </div>
@@ -21,10 +14,10 @@
     <part-description id="what"></part-description>
     <part-process id="process"></part-process>
     <section class="featured" id="work">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12">
-            <h2>Featured projects</h2>
+            <h5>Work</h5>
           </div>
         </div>
         <div class="row">
@@ -48,23 +41,14 @@
       </div>
     </section>
     <section class="footer" id="brands">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12">
             <h5>Brands I've worked with</h5>
             <ul class="brands list-unstyled">
               <li class="brand-item" v-for="brand in orderBy(brands, 'year', -1)" :key="brand.id"><a :href="brand.link">{{brand.label}} <span>&mdash; {{brand.year}}</span></a></li>
             </ul>
-            <div class="alert alert-secondary" role="alert">
-              Portfolio under development
-            </div>
           </div>
-          <!-- <div class="col-lg-4">
-            <h5>Services</h5>
-            <ul class="brands list-unstyled columns-1">
-              <li>User Experience Design</li>
-            </ul>
-          </div> -->
         </div>
       </div>
     </section>

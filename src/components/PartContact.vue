@@ -20,25 +20,30 @@
   margin-bottom: 64px;
   > a {
     //outline: 1px solid red;
+    border-radius: 16px;
+    background: #D3DBE0;
     display: inline-block;
     text-align: left;
-    width: 32px;
-    // line-height: 48px;
-    // height: 48px;
-    padding: 11px 0;
+    padding: 32px;
     vertical-align: bottom;
+    margin-bottom: 32px;
     &:hover {
       opacity: 0.7;
-    }
-    &:after {
-      height: 48px;
     }
     &:not(:first-child) {
       margin-left: 16px;
     }
     > img {
       vertical-align: bottom;
-      max-width: 24px;
+      width: 24px;
+    }
+    @media (max-width: 414px) {
+      width: 100%;
+      text-align: center;
+      // margin: 0;
+      &:not(:first-child) {
+        margin-left: 0;
+      }
     }
   }
 }

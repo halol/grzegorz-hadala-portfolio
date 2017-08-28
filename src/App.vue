@@ -34,6 +34,7 @@ export default {
 }
 body {
   position: relative;
+  font-size: 1.25em;
 }
 
 a, button {
@@ -51,8 +52,16 @@ footer {
 
 h5 {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 900;
+  font-size: 32px;
   margin-bottom: 48px;
+  color: darken(#D3DBE0,10%);
+  // opacity: 0.5;
+  margin-left: -32px;
+  @media (max-width: 414px) {
+    text-align: center;
+    margin-left: 0;
+  }
 }
 
 .container-fluid {

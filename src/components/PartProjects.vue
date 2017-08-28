@@ -72,6 +72,7 @@
     margin-bottom: 48px;
     position: relative;
     overflow: hidden;
+    border-radius: 16px;
     transition: all 0.25s ease;
     box-shadow: 0 0px 0px rgba(black, 0.065);
     &:hover {
@@ -80,6 +81,7 @@
        display: none;
       }
       .project-image {
+        border-radius: 16px;
         img {
           //filter: brightness(0.5);
           transform: scale(1.01);
@@ -88,6 +90,7 @@
     }
   }
   .project-image {
+    border-radius: 16px;
     img {
       width: 100%;
       transition: all 0.5s ease;

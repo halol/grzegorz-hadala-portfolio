@@ -10,6 +10,7 @@ Vue.use(Vue2Filters)
 import Hello from '@/components/Hello'
 import NotFound from '@/components/NotFound'
 import HireMe from '@/components/HireMe'
+// import Work from '@/components/PartProjects'
 // Projects
 Vue.use(Router)
 Vue.use(VueScrollTo)

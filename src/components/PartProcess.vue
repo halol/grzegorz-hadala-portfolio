@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12">
-          <h5>Process</h5>
+          <h5>{{title}}</h5>
         </div>
       </div>
       <div class="row">
@@ -78,9 +78,15 @@
 
 <script>
 export default {
+  props: [
+    'title'
+  ]
 }
 </script>
 
 <style lang="scss">
 @import 'card.scss';
+.list-group {
+  margin-bottom: 16px;
+}
 </style>

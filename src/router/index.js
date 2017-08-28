@@ -15,7 +15,8 @@ import HireMe from '@/components/HireMe'
 Vue.use(Router)
 Vue.use(VueScrollTo)
 Vue.use(VueAnalytics, {
-  id: 'UA-6874650-30'
+  id: 'UA-6874650-30',
+  Router
 })
 
 export default new Router({

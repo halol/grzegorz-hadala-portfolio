@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import VueAnalytics from 'vue-analytics'
 import VueScrollTo from 'vue-scrollto'
 import Vue2Filters from 'vue2-filters'
 import vueSmoothScroll from 'vue-smooth-scroll'
@@ -14,10 +13,6 @@ import HireMe from '@/components/HireMe'
 // Projects
 Vue.use(Router)
 Vue.use(VueScrollTo)
-Vue.use(VueAnalytics, {
-  id: 'UA-6874650-30',
-  Router
-})
 
 export default new Router({
   mode: 'history',
